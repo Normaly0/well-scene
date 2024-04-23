@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { MeshBasicMaterial, sRGBEncoding, Color, NearestFilter } from "three";
+import { MeshBasicMaterial, sRGBEncoding, Color } from "three";
 import { useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF, useTexture, useProgress } from "@react-three/drei";
 
@@ -211,7 +211,6 @@ function Scene() {
     //Well Materials
 
     const wellMaterial = new MeshBasicMaterial({
-        // color: '#343434',
         map: diffuseMap
     });
 
